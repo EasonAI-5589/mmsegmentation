@@ -61,6 +61,8 @@ val_dataloader = dict(
         data_prefix=dict(
             img_path='images/validation',
             seg_map_path='annotations/validation'),
+        img_suffix='.jpg',
+        seg_map_suffix='_seg.png',
         pipeline=test_pipeline))
 test_dataloader = val_dataloader
 
